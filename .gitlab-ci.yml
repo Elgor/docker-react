@@ -17,7 +17,7 @@ docker-build:
   services:
     - docker:dind
   before_script:
-    - docker build -t elgor/docker-react -f Dockerfile.dev
+    - docker build -t elgor/docker-react -f Dockerfile.dev .
   # Default branch leaves tag empty (= latest tag)
   # All other branches are tagged with the escaped branch name (commit ref slug)
   script:
