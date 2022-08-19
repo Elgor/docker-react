@@ -21,4 +21,4 @@ docker-build:
   # Default branch leaves tag empty (= latest tag)
   # All other branches are tagged with the escaped branch name (commit ref slug)
   script:
-    - docker run -t elgor/docker-react npm run test -- --coverage --exit
+    - docker run -t elgor/docker-react npm run test --coverage
